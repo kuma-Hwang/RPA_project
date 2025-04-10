@@ -1,0 +1,1109 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="470,371" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="96">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="689.6000000000001,1272" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="참고사항" />
+      <Variable x:TypeArguments="x:Double" Name="실적값" />
+      <Variable x:TypeArguments="x:Double" Name="전망값" />
+      <Variable x:TypeArguments="x:Double" Default="[0]" Name="증감률" />
+      <Variable x:TypeArguments="ue:ISheetRef" Name="결과이름" />
+      <Variable x:TypeArguments="s:DateTime" Default="[DateTime.Today]" Name="today" />
+      <Variable x:TypeArguments="x:String" Default="[string.Format(&quot;{0}\UiPath_프로젝트&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]" Name="SavePoint" />
+      <Variable x:TypeArguments="x:String" Default="[string.Format(&quot;Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + &quot;&quot;\UiPath_프로젝트\&quot;&quot; + DateTime.Today.ToString(&quot;&quot;yyyy-MM-dd&quot;&quot;) + &quot;&quot;_경기전망조사.xlsx&quot;&quot;&quot;)]" Name="filePath" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="폴더">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">CreateDirectory_1</x:String>
+            <x:String x:Key="SourcePropertyName">Output</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="제출파일명" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="481.6,84.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="[폴더]" Path="[string.Format(&quot;{0}\UiPath_프로젝트&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateDirectory>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: KOSIS 국가통계포털" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="481.6,84.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="5a274e65-e599-4596-a96e-88edf6f9c26b" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,517.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,56.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement>
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable BrowserURL="kosis.kr/index/index.do" CVScreenId="fc104480-70ea-45ea-853a-2c8aa46e476c" CvElementArea="220, 606, 179, 115" CvTextArea="256, 685, 107, 21" CvTextArgument="2x2R . 27|" CvType="Button" DesignTimeRectangle="225, 611, 171, 100" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;경제일반ㆍ경기 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='main_layout' tag='SPAN' type='' class='' check:innerText='경제일반ㆍ경기' /&gt;" Guid="1f9d9dd7-624e-4cbe-9b57-032633262447" InformativeScreenshot="a0f5cbe56b8d3cfabeff00668517f44c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KOSIS 국가통계포털' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NMouseScroll>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.5" DisplayName="Click '경제일반ㆍ경기'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a274e65-e599-4596-a96e-88edf6f9c26b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="kosis.kr/index/index.do" CVScreenId="28e3988d-69ae-45e1-893e-2a81e6554d8b" CvElementArea="220, 546, 179, 115" CvTextArea="256, 625, 107, 21" CvTextArgument="2x2R . 27|" CvType="Button" DesignTimeRectangle="225, 551, 171, 100" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;경제일반ㆍ경기 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='main_layout' tag='SPAN' type='' class='' check:innerText='경제일반ㆍ경기' /&gt;" Guid="484b540f-ca49-419a-90ba-6a05ce088f9b" InformativeScreenshot="f363a4222b03125863ced1b50f6c5966.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='KOSIS 국가통계포털' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,144.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="7" Version="V4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NMouseScroll>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '중소기업경기전망조사'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a274e65-e599-4596-a96e-88edf6f9c26b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="a6fbc726-9aea-4dd9-9c69-f26d9195edfd" CvElementArea="517, 504, 29, 31" CvTextArea="551, 505, 211, 25" CvTextArgument="2171827|RgEA}" CvType="ArrowButton" DesignTimeRectangle="493, 489, 277, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='중소기업경기전망조사' tag='SPAN' type='' class='tree_txt' aaname='중소기업경기전망조사' check:innerText='중소기업경기전망조사' /&gt;" Guid="54cbaa0f-4958-4f9c-86b4-f28817eefe6b" InformativeScreenshot="a379e4d46b8d46456e14789cb8b81162.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내통계 | 주제별 통계' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2023년 이후'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a274e65-e599-4596-a96e-88edf6f9c26b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="533000f9-7f4a-4939-a427-c42353793b6b" CvElementArea="523, 567, 35, 32" CvType="ArrowButton" DesignTimeRectangle="523, 566, 36, 32" DesignTimeScaleFactor="1.25" ElementType="ArrowButton" Guid="fa20c661-662f-45a4-88f6-dc3b97465dc0" InformativeScreenshot="14f8f6293b584ea2579bbb8623b755eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내통계 | 주제별 통계' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="533000f9-7f4a-4939-a427-c42353793b6b" CvElementArea="523, 567, 35, 32" CvTextArea="562, 567, 121, 25" CvTextArgument="202351 0|$" CvType="ArrowButton" DesignTimeRectangle="493, 551, 221, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='2023년 이후' tag='SPAN' type='' class='tree_txt' aaname='2023년 이후' check:innerText='2023년 이후' /&gt;" Guid="47f5a533-a583-46b8-b265-1161604a752a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="-5" Y="-3" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="0.6" DisplayName="Click '총괄표 실적 SBHI   월 2023.01…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a274e65-e599-4596-a96e-88edf6f9c26b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="e97b6dbf-e59b-4571-ae23-294796aae2b4" CvTextArea="564, 639, 416, 22" CvTextArgument="@¿2e ST SBHI 457IZ 2 2023.01~2025.030" CvType="Text" DesignTimeRectangle="588, 636, 396, 29" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aaname='총괄표 실적 SBHI   월 2023.01~2025.03' tag='SPAN' type='' class='' check:innerText='총괄표 실적 SBHI   월 2023.01~2025.03' /&gt;" Guid="ec848733-d86a-4055-b75c-bec58cd16a63" InformativeScreenshot="da16558ad631c80f72d41bd0a41321b5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='국내통계 | 주제별 통계' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: 총괄표 실적 SBHI" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="333.6,49.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" OpenMode="Never" ScopeGuid="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,2509.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click '시점'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="421a6f98-58f2-465b-a450-f341045e7ee0" CvElementArea="419, 403, 85, 34" CvTextArea="457, 410, 29, 18" CvTextArgument="AB" CvType="Button" DesignTimeRectangle="421, 406, 81, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='btn_time' tag='BUTTON' type='button' class='btn_time' aaname='시점' check:innerText='시점' /&gt;" Guid="ae6f6ba5-53e7-4fa4-bc14-048dbcdaf8b3" InformativeScreenshot="bcb756175559dad32ca87c0d7d7a7ecd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="421a6f98-58f2-465b-a450-f341045e7ee0" CvTextArea="511, 317, 85, 22" CvTextArgument="NT SBHI" CvType="Text" DesignTimeRectangle="455, 315, 142, 28" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl tag='FONT' type='' class='' aaname='총괄표 실적 SBHI' check:innerText='총괄표 실적 SBHI' /&gt;" Guid="ce6883d6-ee59-411a-a966-364d8d581f4a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '전체해제'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="779f2387-936f-4995-b3e9-6fd7b739f877" CvElementArea="800, 567, 91, 33" CvTextArea="815, 574, 61, 20" CvTextArgument="TIX|ôX" CvType="Button" DesignTimeRectangle="803, 570, 87, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='timePopListMBtn' tag='BUTTON' type='button' class='btn_green' aaname='전체선택' check:innerText='전체해제' /&gt;" Guid="aa5c94f8-3e98-4a8e-a4a2-12dac266b9f8" InformativeScreenshot="937ca1f7f9716a08f34bc58f9862b1e5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2025.03'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="1d13a229-3947-46fe-b2d8-1cf6a3db99d7" CvElementArea="483, 683, 20, 20" CvType="CheckBox" DesignTimeRectangle="484, 684, 20, 20" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl class='fancytree-checkbox' parentid='ft-id-4' tag='SPAN' type='' aaname='' /&gt;" Guid="33d937ae-a1fa-48fb-80b7-0cce15bc6fe6" InformativeScreenshot="d198cd519830c1becff7a6e5e8c5bf79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1d13a229-3947-46fe-b2d8-1cf6a3db99d7" CvTextArea="510, 685, 61, 16" CvTextArgument="2025.03" CvType="Text" DesignTimeRectangle="508, 682, 68, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl class='fancytree-title' parentid='ft-id-4' tag='SPAN' type='' aaname='2025.03' check:innerText='2025.03' /&gt;" Guid="3bbcbdfd-2db4-4887-a502-13dbab17f23f" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="1" Y="-4" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '적용'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="62cfedfe-4ee5-45bd-8643-2a5069594b4c" CvElementArea="771, 469, 62, 32" CvTextArea="785, 476, 32, 18" CvTextArgument="2B" CvType="Button" DesignTimeRectangle="774, 472, 57, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='btnTimeAccept' tag='BUTTON' type='button' class='btn_navy' aaname='적용' check:innerText='적용' /&gt;" Guid="ae81bd03-50c8-4416-be84-6a7c3f7e3db5" InformativeScreenshot="defdd7c89a7858bb6089e8aac2f4eb1d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="482c38f5-3949-4d04-8e09-ec9b4065f5a1" CvElementArea="1643, 403, 104, 34" CvTextArea="1677, 411, 57, 17" CvTextArgument="c225" CvType="Button" DesignTimeRectangle="1643, 402, 104, 34" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="edc6f458-e3b3-47cc-b520-207352cca9c1" InformativeScreenshot="216aaa8e84a87f436823a958f84dff7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="e8c958a6-254e-486d-8afb-0bfdd4aed165" CvTextArea="511, 317, 85, 22" CvTextArgument="NT SBHI" CvType="Text" DesignTimeRectangle="455, 315, 142, 28" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl tag='FONT' type='' class='' aaname='총괄표 실적 SBHI' check:innerText='총괄표 실적 SBHI' /&gt;" Guid="7a2bb8e4-2193-4ea1-a6de-888506a2eab0" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="2" Y="3" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="0.3" DisplayName="Click '다운로드'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="8320c573-6d5b-47c5-ab05-c911a41f219e" CvElementArea="1218, 904, 86, 38" CvTextArea="1235, 915, 52, 16" CvTextArgument="9225" CvType="Button" DesignTimeRectangle="1220, 907, 83, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl aaname='다운로드' parentid='pop_downgrid2' tag='A' type='' class='' check:innerText='다운로드' /&gt;" Guid="8bff82d9-134f-4fd8-9e55-ed260553a659" InformativeScreenshot="ce77cc7746d164b305600580b82f7d26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8320c573-6d5b-47c5-ab05-c911a41f219e" CvTextArea="1002, 407, 527, 24" CvTextArgument="c225 X e7|" CvType="Text" DesignTimeRectangle="980, 392, 563, 54" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl parentid='pop_downgrid2' tag='DIV' type='' class='pop_top' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;다운로드 &amp;#x9;&amp;#x9;' check:innerText='다운로드&amp;#xA;X 닫기' /&gt;" Guid="6b3bad14-f94b-4817-b707-6eb5f0957dd0" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '파일 이름'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Text="C:\Users\%USERNAME%\Desktop\UiPath_프로젝트\총괄표_실적.xlsx" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="bfe2e9cf-bb90-4590-ad4d-54e6c6bcb9c9" CvElementArea="159, 397, 785, 29" CvType="InputBox" DesignTimeRectangle="169, 402, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="9fc73970-1a21-4b76-810a-152dce4dec4d" InformativeScreenshot="c634706bba814d2b0f91f56e89a4c99d.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="bfe2e9cf-bb90-4590-ad4d-54e6c6bcb9c9" CvTextArea="69, 402, 91, 18" CvTextArgument="m12! O|E(N):" CvType="Text" DesignTimeRectangle="22, 399, 144, 28" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;ctrl name='탐색 창' role='pane' /&gt;&lt;ctrl name='폴더 레이아웃 창' role='pane' /&gt;&lt;ctrl name='세부 정보 창' role='pane' /&gt;&lt;ctrl name='파일 이름:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;ctrl name='탐색 창' role='pane' /&gt;&lt;ctrl name='폴더 레이아웃 창' role='pane' /&gt;&lt;ctrl name='세부 정보 창' role='pane' /&gt;&lt;ctrl name='파일 이름:' role='text' automationid='' check:text='파일 이름:' /&gt;" Guid="925ce8ed-83f9-4c14-b78a-95780d05b44f" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '저장(&amp;S)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="381bce1b-137e-43f7-84cb-ed10b1cdccee" CvElementArea="691, 535, 112, 34" CvTextArea="721, 543, 50, 17" CvTextArgument="A¿(S)" CvType="Button" DesignTimeRectangle="693, 537, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' check:text='저장(&amp;amp;S)' /&gt;" Guid="56601ff7-1d5a-402f-be2b-e1995fee2dd0" InformativeScreenshot="e48935daab7a39c3ff9697545fca8317.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="381bce1b-137e-43f7-84cb-ed10b1cdccee" CvTextArea="43, 8, 128, 17" CvTextArgument="C 0|6e3 AE" CvType="Text" DesignTimeRectangle="43, 8, 128, 17" ElementType="Text" Guid="b49f1ffc-0656-4375-8c8e-38f1c68fe34e" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'X 닫기'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="c8fec770-5ad4-4c52-bdca-ec99fe8386b8" CvTextArea="1362, 436, 49, 20" CvTextArgument="X e7" CvType="Text" DesignTimeRectangle="1364, 434, 48, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl parentid='pop_downgrid2' tag='A' type='' class='' aaname='X 닫기' check:innerText='X 닫기' /&gt;" Guid="c8b42cc9-16e7-46c1-a421-db874d467520" InformativeScreenshot="7d00fc706be5c317775fa0f89116c8c6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3.5" DisplayName="Click '총괄표 전망 SBHI (월 2023.02~…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="888f545b-c25f-4a97-9fa3-0ff8789b9d59" CvTextArea="130, 416, 216, 18" CvTextArgument="628 ag SBHI (2! 2023.02-" CvType="Text" DesignTimeRectangle="131, 414, 282, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_leftMenu' tag='IFRAME' /&gt;&lt;webctrl aaname='총괄표 전망 SBHI (월 2023.02~2025.04) ' class='statistics' parentname='J1' tag='SPAN' type='' check:innerText='총괄표 전망 SBHI (월 2023.02~2025.04)' /&gt;" Guid="84e67d39-42da-4634-9769-b4b014235e53" InformativeScreenshot="4751e6f869d257b52a8cefe743cf67a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '시점'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="421a6f98-58f2-465b-a450-f341045e7ee0" CvElementArea="419, 403, 85, 34" CvTextArea="457, 410, 29, 18" CvTextArgument="AB" CvType="Button" DesignTimeRectangle="420, 402, 85, 34" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='btn_time' tag='BUTTON' type='button' class='btn_time' aaname='시점' check:innerText='시점' /&gt;" Guid="ae6f6ba5-53e7-4fa4-bc14-048dbcdaf8b3" InformativeScreenshot="24e0ea1b63434f2b944bb419fb741538.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="447, 308, 161, 43" Guid="ed90aa4b-1cc3-4106-9290-e6596c16b5b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAArCAYAAAAQeugIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAf4SURBVHhe7Zj7T1NpGsf7R8wf12zTxDQhbciqsZWUNVQTGQedoA7tuEAWSjaMMIxtM7M4g7chGS6WkkFE3FVXxtpSLyhthV5oi/S7Oe25vOc91wJyduL7JJ8fep73+pzPudUGFiwsDht9gAWLow4mIQvLg0nIwvJgErKwPJiELCwPJiELy8P2H/oICxZHHLaJL/4CJiILK4NJyMLysN37wgYmIgsrg0nIwvJgEu4zatt55PN55Es1OsWixTiYhC9vY3BgEIMDE1jO08kDxKca99Aig1iHHXa7HfZggk6ailqJl3ibSXwwCRdDzRNh9yH2ik7SsYxwuwcePS7cxgbXtKVxDylexeBrzKlHCE3lDi5hIsj374ghQyc/szAvoSiGWWiBEggp2lAIJ0RXQhPj0Jg50YchoeEYQv/9SljDxmIMV8544HQ0+zvbOnFpfA4b1A01E/WpzG+H3emC58wVxJYblzvZQ9oTsU4zeXKu0CKRMBnm/6JZDivvXMekzTnb6DtbN26/oQdRD3ETVkooCw3JjPKfVMISEtc8KmPyODsx8YdkoqaEBJ1RcmZtyYzyRychHbUkJsRF2WH3x5D5SDdSixoyy3OYm5/DcrpZtMfDruYYF6fROKK466rJSJxImShSsXyyIrcSSYy282Ofuw3la6mRhNR6xf2oSGiwRzEeDcIltPUEEP6Zq+E0YgMBnHDaYW8LIVGSmpNiXPqVf//M55FcDKOTv4vaHSEsSz00JTPKH1jCVgWslZJ4/PMgfNzGuYm5O6CwKa44v/4XG7pfjLQkNUxfbP52DT9uNrFawuxNBIS5HSEk+ItLKc7RSSheqHYfJtJUspRE8p38kJ4YyevCHZWcU1syo7zeXGbCVq/XYUh1FaMd0nuIgLMjjAe5OuobCQx6nfKiOpzwnJvEOj1WfZ2QZL1xrLqVQy6Xw8ZmDsViFfUE8TjO0P0lSAn1xm+VF9+dkO0lMJWTz0dCzp0hJCTXLe4nhAR/jHwcK2ukZHVIkNCOwM0NRZ5mnRQjIc+9+I6XkLvAdoXjUt3IdUpo5/XmMoM5CYUiHPPA4w3g8vgkVjNV1MX3xG7celNFMZlAbOQiOts9cDm5YjVPXr3+DN93SO+LoszceG2UvFcTlkpYTITEx96Jk7yMjk6MPimqzqEuoRb7l7D+OCw9jrkbwPEAwveeIVdVaaspRhW5lVHxcey69gBVsQ8pWQCjc7OYlTGJy8IrilUSqmJSFvkGiUJ6BDF9CFwdxOBIDNPL66iaHPdQJazmsBrtll4t/DGsV9cR8wvrdcLXP40X3J3fCgm5k/2vTjjpMR3kuoi2Bh8mngvTWBfvghzq50idQ5Zwb28P+qQRNb04FYILKmMaUCkgm80imy2gUqPz+1hPRxRpeg4ZFSx9Kz3u7CeH8ajA5wpP8f0Z/m7tCODWe2oN+9nf3h4WRAmN1ian8noB0as+xasR93U8mZLapSP6EjYuqpElZMX6tlLXIBaINZFzBRPKNRthQsK3uHWB/vulBUaWZOMtjai00aQbt17T62mlWDxmTnRpCQMnj+Ni5BFxYgQqeJuIYvJhQbmGfUqYfTaL2dlZzD5Io6KSN6SSxdN7A/ARf5PZv54Vx9IUo/QWjyLd4qM9cDPL58i6yiUzymvOZRLbx48fcZTE+1Qk0cSLaFo5hkA64m22Ox1FWjweR1AoyIKyjxl28txdOIvs9o4i1ySN6Gl+jX1xlTzHDt4sRDFwzgs3+d7rdMHNvVePzSBdpPvsg+04Lrv4sR1B/M4fF2ujWoc0xr18n3NTyPLHxD3Zg4jT8+jk9ecyxra7u4tWKGfiiIR74G93Nz4+xOIec8Pt7ULv9XtY21T2a4l4UJQwklLJ86RuCBJGkBKPExLGlX2MSSFCCKbMc7zG1JduuNvdcId/V8lvId5HPN458bi2HG5CSIcfkSTdV4OtOIauRLBC17byBEPCB4NrCCv8cbE2anWorKBfEPfsFDYbx4l9c5LR8+vkdecyQUsSpu6cJ77QnHAJhVUU9ziGVsqK/hyt3gn/PyU0QLyIjqM/vokynS+kMNXDSypbuwaVFCLCB5LDCW/POH6amcHMnQj6/ybJ7vrHitiHFKPnziY2N3nW4hg/L/Xx3kjxfbQlM8ofoYQrGOKvHteVGWxW6PwudstrGBcWKl5hckQJHU5JYE3OYypD9BdP7n7QF1ri4BKKJ8U7ri3YfC+/LrUTTrOFJ9f9yi9jEv841soqa9DDH0FKPI/akhnlDyxhrVaDOZ5j7K/C4v+Jh+sfUCLzOyV8WLuLnja+zaXf5Hme+4KEpyN4qZLXJd6nLKRpOAlVxlTwkii2Gfpwnx5jZYh/Yrhw/vp9PP9QknKNOv2GvpN8/7O/4D3dX4PS24f46e9d8IpPHSdcp7owdOc53u/I277UkpC7+FX7kPtW2ZNOnpyrL073M8ZWrVZhlvzqGPzke6AW7l7cfaXszzH/jUp7Pb6ZV4zxaUniRosSzivGyGM+5FZpS+H048c/6L6fHy1J2KD4Dv9e+BFj13rRdUp6dHrP9qJ/+AbuLiVRLKv041kcph+5BgwvKsb4s/Du6V2MfeWXvy9zHymnutD/wzwyRWWfz5HWJWQwDhlbpVIBg2Eltp2dHTAYVmIrl8tgMKzEViqVwGBYCZOQYTlMQobl2IrFIhgMK7EVCgUwGFZi297eBoNhJUxChuXYtra2wGBYyf8AyLJSWPHYmYkAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="버튼 '시점'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="d189fc3f-1522-4110-91af-6d1fba79f198" CvElementArea="419, 403, 85, 34" CvTextArea="457, 410, 29, 18" CvTextArgument="AB" CvType="Button" DesignTimeRectangle="421, 406, 81, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu2' tag='IFRAME' /&gt;&lt;webctrl id='btn_time' tag='BUTTON' type='button' class='btn_time' aaname='시점' check:innerText='시점' /&gt;" Guid="25227283-fc79-4a5d-b4eb-6fde6e191211" InformativeScreenshot="df4bbfcb30de21e3ff0a2936ba3f498d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 전망 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="d189fc3f-1522-4110-91af-6d1fba79f198" CvTextArea="510, 319, 86, 21" CvTextArgument="Tg SBHI" CvType="Text" DesignTimeRectangle="455, 315, 142, 28" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu2' tag='IFRAME' /&gt;&lt;webctrl tag='FONT' type='' class='' aaname='총괄표 전망 SBHI' check:innerText='총괄표 전망 SBHI' /&gt;" Guid="25f35824-a56d-417b-a303-7e11cd6ea445" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '전체해제'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="779f2387-936f-4995-b3e9-6fd7b739f877" CvElementArea="800, 567, 91, 33" CvTextArea="815, 574, 61, 20" CvTextArgument="TIX|ôX" CvType="Button" DesignTimeRectangle="803, 570, 87, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='timePopListMBtn' tag='BUTTON' type='button' class='btn_green' aaname='전체선택' check:innerText='전체해제' /&gt;" Guid="aa5c94f8-3e98-4a8e-a4a2-12dac266b9f8" InformativeScreenshot="937ca1f7f9716a08f34bc58f9862b1e5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2025.03'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="9d032d89-0eaf-4eb0-be4d-8812faaf1b43" CvElementArea="483, 683, 20, 20" CvType="CheckBox" DesignTimeRectangle="484, 684, 20, 20" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu2' tag='IFRAME' /&gt;&lt;webctrl class='fancytree-checkbox' parentid='ft-id-4' tag='SPAN' type='' aaname='' /&gt;" Guid="6b874b72-e0a3-48a5-b019-2256ba004776" InformativeScreenshot="42a6b0716ba099f0eca93e7f8fb4ff9e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 전망 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9d032d89-0eaf-4eb0-be4d-8812faaf1b43" CvTextArea="510, 685, 61, 16" CvTextArgument="2025.04" CvType="Text" DesignTimeRectangle="508, 682, 68, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu2' tag='IFRAME' /&gt;&lt;webctrl class='fancytree-title' parentid='ft-id-4' tag='SPAN' type='' aaname='2025.04' check:innerText='2025.04' /&gt;" Guid="2a88350e-1ed4-415b-8ee0-9b30850d0967" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3.5" DisplayName="Click '적용'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,56.8" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="62cfedfe-4ee5-45bd-8643-2a5069594b4c" CvElementArea="771, 469, 62, 32" CvTextArea="785, 476, 32, 18" CvTextArgument="2B" CvType="Button" DesignTimeRectangle="774, 472, 57, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl id='btnTimeAccept' tag='BUTTON' type='button' class='btn_navy' aaname='적용' check:innerText='적용' /&gt;" Guid="ae81bd03-50c8-4416-be84-6a7c3f7e3db5" InformativeScreenshot="defdd7c89a7858bb6089e8aac2f4eb1d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,72.8" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="482c38f5-3949-4d04-8e09-ec9b4065f5a1" CvElementArea="1643, 403, 104, 34" CvTextArea="1677, 411, 57, 17" CvTextArgument="c225" CvType="Button" DesignTimeRectangle="1643, 402, 103, 34" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="edc6f458-e3b3-47cc-b520-207352cca9c1" InformativeScreenshot="17bb4d0eca777d7c407ed79b7497662d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ba86f4a3-586f-4b6e-97c8-55852be2de54" DesignTimeRectangle="455, 315, 142, 28" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu2' tag='IFRAME' /&gt;&lt;webctrl tag='FONT' type='' class='' aaname='총괄표 전망 SBHI' check:innerText='총괄표 전망 SBHI' /&gt;" Guid="0a43ff25-aab0-4cba-82c5-5b21d4cdd341" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset X="2" Y="3" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="0.3" DisplayName="Click '다운로드'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,84.8" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statHtml/statHtml.do" CVScreenId="8320c573-6d5b-47c5-ab05-c911a41f219e" CvElementArea="1218, 904, 86, 38" CvTextArea="1235, 915, 52, 16" CvTextArgument="9225" CvType="Button" DesignTimeRectangle="1220, 907, 83, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl aaname='다운로드' parentid='pop_downgrid2' tag='A' type='' class='' check:innerText='다운로드' /&gt;" Guid="8bff82d9-134f-4fd8-9e55-ed260553a659" InformativeScreenshot="ce77cc7746d164b305600580b82f7d26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8320c573-6d5b-47c5-ab05-c911a41f219e" CvTextArea="1002, 407, 527, 24" CvTextArgument="c225 X e7|" CvType="Text" DesignTimeRectangle="980, 392, 563, 54" FuzzySelectorArgument="&lt;webctrl id='iframe_rightMenu' tag='IFRAME' /&gt;&lt;webctrl id='iframe_centerMenu1' tag='IFRAME' /&gt;&lt;webctrl parentid='pop_downgrid2' tag='DIV' type='' class='pop_top' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;다운로드 &amp;#x9;&amp;#x9;' check:innerText='다운로드&amp;#xA;X 닫기' /&gt;" Guid="6b3bad14-f94b-4817-b707-6eb5f0957dd0" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '파일 이름'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Text="C:\Users\%USERNAME%\Desktop\UiPath_프로젝트\총괄표_전망.xlsx" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="bfe2e9cf-bb90-4590-ad4d-54e6c6bcb9c9" CvElementArea="159, 397, 785, 29" CvType="InputBox" DesignTimeRectangle="169, 402, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="9fc73970-1a21-4b76-810a-152dce4dec4d" InformativeScreenshot="c634706bba814d2b0f91f56e89a4c99d.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="bfe2e9cf-bb90-4590-ad4d-54e6c6bcb9c9" CvTextArea="69, 402, 91, 18" CvTextArgument="m12! O|E(N):" CvType="Text" DesignTimeRectangle="22, 399, 144, 28" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;ctrl name='탐색 창' role='pane' /&gt;&lt;ctrl name='폴더 레이아웃 창' role='pane' /&gt;&lt;ctrl name='세부 정보 창' role='pane' /&gt;&lt;ctrl name='파일 이름:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;ctrl name='탐색 창' role='pane' /&gt;&lt;ctrl name='폴더 레이아웃 창' role='pane' /&gt;&lt;ctrl name='세부 정보 창' role='pane' /&gt;&lt;ctrl name='파일 이름:' role='text' automationid='' check:text='파일 이름:' /&gt;" Guid="925ce8ed-83f9-4c14-b78a-95780d05b44f" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '저장(&amp;S)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="336,218.4" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6650cedd-2b8d-429d-8b19-633a08d207c1" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="kosis.kr/statisticsList/statisticsListIndex.do" CVScreenId="381bce1b-137e-43f7-84cb-ed10b1cdccee" CvElementArea="691, 535, 112, 34" CvTextArea="721, 543, 50, 17" CvTextArgument="A¿(S)" CvType="Button" DesignTimeRectangle="693, 537, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' check:text='저장(&amp;amp;S)' /&gt;" Guid="56601ff7-1d5a-402f-be2b-e1995fee2dd0" InformativeScreenshot="e48935daab7a39c3ff9697545fca8317.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="381bce1b-137e-43f7-84cb-ed10b1cdccee" CvTextArea="43, 8, 128, 17" CvTextArgument="C 0|6e3 AE" CvType="Text" DesignTimeRectangle="43, 8, 128, 17" ElementType="Text" Guid="b49f1ffc-0656-4375-8c8e-38f1c68fe34e" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALHSURBVFhHtVjLihNBFL0gIrgYRnAx4KCDKyfphuikg4iLLAQFFQOCCx0kCzOp7AL+QPyC+AXmC2Q+YBZZu5Bs3QVMj9t8Qsup6kpX3a5Kd+dx4CwmXbfq9H3V7SEqi0b3kCLRpWb/klpiTq1BkqeYy+dYh/U7Q0OcUCQm+QNLEHaw3xjyzfvj3MatQVIPPiffjl4mPw+eJ/8ozPHXrSj5fvdF8uHh+1RMf1zdM1GvQVF/xg9/dvrRe7CPf248Tr7eew0hM7lvKUgBg6V5+MFZT74ZP6AK4Z2wfr4sFuIRcHX76WqzmIJ5TOF4QUF7To9W8Y6p1vhLYQfPsIaL0Pz0oLNGiMoBKwSmgJiCGQ7mZj7EVOv6xAyO38zcOeJIQh2CawpGfHlZwJaLAL8cvx3bK+EeRxIqD9S69uLqgAdjCpemCCTs8OiVUb6yAdkiftxpb+UBDuQMF/L75pOJeopmwgQgFxBPvtG2gFd5WJQ3mhdDLgKhWFB9yDfZBa4puDRFqHMcoejdf4dc8JTRdkBZmyIginhf0CK48S6xoPpEi0CeEBegw8ENC9EUbcureDn8jd8Z0NRMbzhFIDHD0/MON/bC0WMsIu8MzOnksFCEZCSmpqEXLTHK2bqIGcMAOnCxCGWY1rEHcDW38RHhMRBTMC0nAkRc+WCCvl/WAybPLlYhtkU45gYn5TwgppL8WWmKVQfWIhAW2nh024iWCHnDolxJuii3eE9Mq8SsDpSrkuVoWHthmlu6T6hGpbFJklWlUfK6Y9q3tJyq9uyNtHPquwNeQFgyEcA+c8PoN9oLWS5w7KNSUNrpPImbOauIddilEIQ4nazhejWpoy+UwS4S1fBAKmCGBpXPg3WQ94Lvw3cNZYJnTSkTELLpugqQsI7pK0e8OZqR8T2hpuxgWuV7pRjwjqwihEuM1L8KRNv1IYPZ0V8BNv4DKMMvSWgePc4AAAAASUVORK5CYII=" InformativeScreenshot="ed3a67787f0de1960713425f8af68f15.jpg" Selector="&lt;html app='chrome.exe' title='총괄표 실적 SBHI' /&gt;" Url="*" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALHSURBVFhHtVjLihNBFL0gIrgYRnAx4KCDKyfphuikg4iLLAQFFQOCCx0kCzOp7AL+QPyC+AXmC2Q+YBZZu5Bs3QVMj9t8Qsup6kpX3a5Kd+dx4CwmXbfq9H3V7SEqi0b3kCLRpWb/klpiTq1BkqeYy+dYh/U7Q0OcUCQm+QNLEHaw3xjyzfvj3MatQVIPPiffjl4mPw+eJ/8ozPHXrSj5fvdF8uHh+1RMf1zdM1GvQVF/xg9/dvrRe7CPf248Tr7eew0hM7lvKUgBg6V5+MFZT74ZP6AK4Z2wfr4sFuIRcHX76WqzmIJ5TOF4QUF7To9W8Y6p1vhLYQfPsIaL0Pz0oLNGiMoBKwSmgJiCGQ7mZj7EVOv6xAyO38zcOeJIQh2CawpGfHlZwJaLAL8cvx3bK+EeRxIqD9S69uLqgAdjCpemCCTs8OiVUb6yAdkiftxpb+UBDuQMF/L75pOJeopmwgQgFxBPvtG2gFd5WJQ3mhdDLgKhWFB9yDfZBa4puDRFqHMcoejdf4dc8JTRdkBZmyIginhf0CK48S6xoPpEi0CeEBegw8ENC9EUbcureDn8jd8Z0NRMbzhFIDHD0/MON/bC0WMsIu8MzOnksFCEZCSmpqEXLTHK2bqIGcMAOnCxCGWY1rEHcDW38RHhMRBTMC0nAkRc+WCCvl/WAybPLlYhtkU45gYn5TwgppL8WWmKVQfWIhAW2nh024iWCHnDolxJuii3eE9Mq8SsDpSrkuVoWHthmlu6T6hGpbFJklWlUfK6Y9q3tJyq9uyNtHPquwNeQFgyEcA+c8PoN9oLWS5w7KNSUNrpPImbOauIddilEIQ4nazhejWpoy+UwS4S1fBAKmCGBpXPg3WQ94Lvw3cNZYJnTSkTELLpugqQsI7pK0e8OZqR8T2hpuxgWuV7pRjwjqwihEuM1L8KRNv1IYPZ0V8BNv4DKMMvSWgePc4AAAAASUVORK5CYII=" InformativeScreenshot="8187828ff3b438b1149745f8e3c77e2d.jpg" Selector="&lt;html app='chrome.exe' title='KOSIS 국가통계포털' /&gt;" Url="https://kosis.kr/index/index.do" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="481.6,113.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[string.Format(&quot;{0}\UiPath_프로젝트\총괄표_실적.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="총괄표실적" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="560,46.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="545.6,1686.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[string.Format(&quot;{0}\UiPath_프로젝트\총괄표_전망.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="총괄표전망" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="512,1393.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="497.6,1356" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[string.Format(&quot;{0}\UiPath_프로젝트\총괄표_통합.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="증감률결과" />
+                          </ActivityAction.Argument>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="464,1063.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="시트 메타데이터 작성" sap:VirtualizedContainerService.HintSize="449.6,100.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,192" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[string.Format(&quot;항목분류&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,56.8" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[string.Format(&quot;실적(2025.03)&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,56.8" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[string.Format(&quot;전망(2025.04)&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,56.8" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[string.Format(&quot;증감률(%)&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,56.8" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[string.Format(&quot;생산&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;A3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,84.8" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[string.Format(&quot;내수판매&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;A4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,84.8" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[string.Format(&quot;수출&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                              <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;A5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="491.2,84.8" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[string.Format(&quot;영업이익&quot;)]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:WriteCellX>
+                            </Sequence>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="449.6,762.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[총괄표실적.Sheet(&quot;데이터&quot;).Range(&quot;B3:E6&quot;)]" SaveAfterEachRow="False">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,537.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ReadCellValueX Cell="[CurrentRow.ByIndex(3)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="285.6,84.8" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                                      <ueab:ReadCellValueX.SaveTo>
+                                        <OutArgument x:TypeArguments="x:Double">[실적값]</OutArgument>
+                                      </ueab:ReadCellValueX.SaveTo>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:ReadCellValueX>
+                                    <ueab:ReadCellValueX Cell="[총괄표전망.Sheet(&quot;데이터&quot;).Cell(&quot;E&quot; + (CurrentIndex+2).ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="285.6,84.8" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                                      <ueab:ReadCellValueX.SaveTo>
+                                        <OutArgument x:TypeArguments="x:Double">[전망값]</OutArgument>
+                                      </ueab:ReadCellValueX.SaveTo>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:ReadCellValueX>
+                                    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="285.6,84.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Double">[증감률]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Double">[Double.Round((전망값 - 실적값)/실적값*100, 2)]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                    <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;B&quot; + (CurrentIndex+1).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="285.6,84.8" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[실적값]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:WriteCellX>
+                                    <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;C&quot; + (CurrentIndex+1).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="285.6,84.8" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[전망값]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:WriteCellX>
+                                    <ueab:WriteCellX Cell="[증감률결과.Sheet(&quot;Sheet1&quot;).Cell(&quot;D&quot; + (CurrentIndex+1).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="285.6,76" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[If(증감률 &gt;= 0, &quot;+&quot; &amp; 증감률.ToString(&quot;0.00&quot;) &amp; &quot;%&quot;, 증감률.ToString(&quot;0.00&quot;) &amp; &quot;%&quot;)]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:WriteCellX>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelForEachRowX>
+                            <ueab:RenameSheetX DisplayName="Rename Sheet" From="[증감률결과.Sheet(&quot;Sheet1&quot;)]" sap:VirtualizedContainerService.HintSize="449.6,162.4" sap2010:WorkflowViewState.IdRef="RenameSheetX_1" To="결과">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:RenameSheetX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="481.6,84.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[제출파일명]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[string.Format("{0}\UiPath_프로젝트\{1}_경기전망조사.xlsx", Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), today.ToString("yyyy-MM-dd"))]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[제출파일명]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="481.6,84.8" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[string.Format(&quot;{0}\UiPath_프로젝트\총괄표_통합.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MoveFile>
+    <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="kuuma0807@gmail.com #2" ConnectionId="403be177-bac2-489e-9594-300c8a4d0981" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="481.6,720" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
+      <umab:GmailApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="448,506.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Cc="[Gmail.SelectedAccount]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,468.8" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Uipath 2차과제 보내드립니다." To="oksimson4@mining5000.co.kr" UseDocumentAsBody="False">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="3">
+                  <InArgument x:TypeArguments="x:String">[제출파일명]</InArgument>
+                  <InArgument x:TypeArguments="x:String">Main.xaml</InArgument>
+                  <InArgument x:TypeArguments="x:String">project.json</InArgument>
+                </scg:List>
+              </umab:SendMailX.Files>
+              <umab:SendMailX.HtmlBodyFromFile>
+                <umabh:HtmlContentArgument HtmlBody="{x:Null}" FilePath=".data/HtmlContent0.html">
+                  <umabh:HtmlContentArgument.RuntimeImages>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </umabh:HtmlContentArgument.RuntimeImages>
+                  <umabh:HtmlContentArgument.ValueMappings>
+                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                  </umabh:HtmlContentArgument.ValueMappings>
+                </umabh:HtmlContentArgument>
+              </umab:SendMailX.HtmlBodyFromFile>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:GmailApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </umab:GmailApplicationCard>
+    <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="481.6,76" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="[string.Format(&quot;{0}\UiPath_프로젝트&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]" Recursive="True">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:DeleteFolderX>
+  </ueab:SequenceX>
+</Activity>
